@@ -8,7 +8,7 @@
     "gatsby-image": "^1.0.39",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-glamor": "^1.6.12",
-    "gatsby-plugin-netlify-cms": "^1.0.8",
+    "gatsby-plugin-netlify-cms": "1.0.8",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-plugin-sharp": "^1.6.34",
     "gatsby-plugin-typography": "^1.7.14",
@@ -17,15 +17,14 @@
     "react-helmet": "^5.2.0",
     "typography-theme-sutro": "^0.15.10"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "format":
+      "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
