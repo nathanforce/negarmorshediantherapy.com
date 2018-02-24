@@ -1,5 +1,6 @@
 backend:
-  name: negarmorshediantherapy.com
+  name: github
+  repo: nathanforce/negarmorshediantherapy.com
 
 media_folder: static/assets
 
