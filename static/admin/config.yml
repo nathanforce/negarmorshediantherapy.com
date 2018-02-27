@@ -4,7 +4,9 @@ backend:
 
 media_folder: static/assets
 
-files:
+- label: "Pages"
+  name: "pages"
+  files:
     - label: "About Page"
       name: "about"
       file: "content/about.md"
