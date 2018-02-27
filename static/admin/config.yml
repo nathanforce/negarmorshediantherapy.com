@@ -4,12 +4,17 @@ backend:
 
 media_folder: static/assets
 
-- label: "Pages"
-  name: "pages"
-  files:
-    - label: "About Page"
-      name: "about"
-      file: "content/about.md"
-      fields:
-        - {label: Title, name: title, widget: string}
-        - {label: Content, name: content, widget: markdown}
+collections:
+  - name: about
+    label: about
+    file: content/about.md
+    fields:
+      - { name: title, label: Title }
+      - { name: text, label: Text, widget: 'markdown' }
+
+  - name: couples_and_family_therapy
+    label: couples_and_family_therapy
+    file: content/couples_and_family_therapy.md
+    fields:
+      - { name: title, label: Title }
+      - { name: text, label: Text, widget: 'markdown' }
