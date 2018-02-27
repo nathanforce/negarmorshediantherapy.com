@@ -1,33 +1,43 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import Link from "gatsby-link";
 
 const Header = () => (
   <div
     style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
+      background: "rebeccapurple",
+      marginBottom: "1.45rem"
     }}
   >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
+    <div style={{}}>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/about">About me</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link to="/therapy/couples-and-family">
+              Couples and Family Therapy
+            </Link>
+          </li>
+          <li>
+            <Link to="/therapy/individual">Individual Therapy</Link>
+          </li>
+          <li>
+            <Link to="/what-to-expect">What to Expect</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/resources">Resources</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
-)
+);
 
-export default Header
+export default Header;

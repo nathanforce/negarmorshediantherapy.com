@@ -1,10 +1,18 @@
-import React from 'react'
+import React from "react";
+import Fullscreen from "../components/Fullscreen";
 
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
-)
+  <Fullscreen
+    style={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      flexDirection: "column"
+    }}
+  >
+    <h1 style={{ fontSize: "100px", color: "#f5f5f5" }}>OOPS</h1>
+    <p>There's nothing here.</p>
+  </Fullscreen>
+);
 
-export default NotFoundPage
+export default NotFoundPage;
