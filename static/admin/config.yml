@@ -5,11 +5,20 @@ backend:
 media_folder: static/assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: about
+    label: about
+    folder: content
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: text, label: Text }
+
+  - name: couples_and_family_therapy
+    label: couples_and_family_therapy
+    folder: content
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: text, label: Text }
