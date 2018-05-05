@@ -1,5 +1,5 @@
 import React from "react";
-import Fullscreen from "../components/Fullscreen";
+import { Fullscreen } from "../components/Fullscreen";
 
 const NotFoundPage = () => (
   <Fullscreen

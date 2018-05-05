@@ -25,7 +25,7 @@ const NavLink = props => (
   </li>
 );
 
-const TemplateWrapper = ({ children, data }) => (
+const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Negar Morshedian" meta={[]} />
     <Fullscreen
@@ -93,22 +93,5 @@ const TemplateWrapper = ({ children, data }) => (
     </Fullscreen>
   </div>
 );
-
-export const query = graphql`
-  query IndexPageQuery {
-    frontmatter: allJavascriptFrontmatter {
-      pages: edges {
-        page: node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-  }
-`;
 
 export default TemplateWrapper;
