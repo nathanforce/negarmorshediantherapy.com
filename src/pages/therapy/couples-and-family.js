@@ -1,6 +1,6 @@
 import React from "react";
 
-export default ({ data }) => <div>CouplesAndFamilyTherapy</div>;
+export default ({ data }) => <div>Fam.</div>;
 
 export const query = graphql`
   query CouplesAndFamilyTherapyQuery {
@@ -9,3 +9,6 @@ export const query = graphql`
     }
   }
 `;
+export const frontmatter = {
+  title: "Couples and Family Therapy"
+};

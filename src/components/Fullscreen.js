@@ -1,7 +1,5 @@
 import React from "react";
 
-const FullScreen = ({ style, ...props }) => (
-  <div {...props} style={{ ...style, height: "100vh" }} />
+export const Fullscreen = ({ style, ...props }) => (
+  <div {...props} style={{ ...style, minHeight: "100vh" }} />
 );
-
-export default FullScreen;

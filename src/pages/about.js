@@ -1,14 +1,15 @@
 import React from "react";
 
-export default ({ data }) => <div>Bloggin</div>;
+export default ({ data }) => <div>Negar is a dope therapist and friend.</div>;
 
 export const query = graphql`
-  query BlogQuery {
+  query AboutMeQuery {
     sitePage {
       id
     }
   }
 `;
+
 export const frontmatter = {
-  title: "Blog"
+  title: "About Me"
 };
