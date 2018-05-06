@@ -7,10 +7,10 @@ const NavLink = props => (
   <li
     css={{
       margin: 0,
-      marginRight: "1rem",
+      marginRight: "1.75rem",
       "& a:hover": {
         paddingBottom: ".4rem",
-        borderBottom: "4px dotted white"
+        borderBottom: "3px dotted currentColor"
       }
     }}
   >
@@ -19,7 +19,7 @@ const NavLink = props => (
       style={{ textDecoration: "none" }}
       activeStyle={{
         paddingBottom: ".4rem",
-        borderBottom: "4px solid white"
+        borderBottom: "3px solid currentColor"
       }}
     />
   </li>
@@ -37,17 +37,19 @@ const TemplateWrapper = ({ children }) => (
       <div
         css={{
           position: "fixed",
+          height: 75,
           top: 0,
           left: 0,
           width: "100%",
           zIndex: "100",
-          padding: "1rem"
+          padding: "1rem",
+          backgroundColor: "white"
         }}
       >
         <nav>
           <ul
             css={{
-              color: "white",
+              color: "darkslategrey",
               fontFamily: "sans-serif",
               margin: 0,
               display: "flex",
@@ -56,7 +58,7 @@ const TemplateWrapper = ({ children }) => (
               listStyleType: "none"
             }}
           >
-            <NavLink to="/about">About me</NavLink>
+            <NavLink to="/about">About Me</NavLink>
 
             <NavLink to="/blog">Blog</NavLink>
 
@@ -76,19 +78,15 @@ const TemplateWrapper = ({ children }) => (
       </div>
       <div
         css={{
+          paddingTop: 75,
           width: "100%",
           minHeight: "100vh",
           top: "0",
-          justifyContent: "center",
-          flexDirection: "column",
-          alignItems: "center",
-          display: "flex",
-          zIndex: "100",
-          color: "white",
-          backgroundColor: "rgb(255, 94, 98)"
+          color: "darkslategray",
+          backgroundColor: "white"
         }}
       >
-        {children()}
+        <div>{children()}</div>
       </div>
     </Fullscreen>
   </div>
