@@ -25,6 +25,18 @@ const NavLink = props => (
   </li>
 );
 
+const links = [
+  <NavLink to="/about">About Me</NavLink>,
+  <NavLink to="/blog">Blog</NavLink>,
+  <NavLink to="/therapy/couples-and-family">
+    Couples and Family Therapy
+  </NavLink>,
+  <NavLink to="/therapy/individual">Individual Therapy</NavLink>,
+  <NavLink to="/what-to-expect">What to Expect</NavLink>,
+  <NavLink to="/contact">Contact</NavLink>,
+  <NavLink to="/resources">Resources</NavLink>
+];
+
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Negar Morshedian" meta={[]} />
@@ -36,14 +48,17 @@ const TemplateWrapper = ({ children }) => (
     >
       <div
         css={{
+          "@media(max-width: 44em)": {
+            display: "none"
+          },
           position: "fixed",
-          height: 75,
+          minHeight: 75,
           top: 0,
           left: 0,
           width: "100%",
           zIndex: "100",
           padding: "1rem",
-          backgroundColor: "white"
+          backgroundColor: "#f3f7f7"
         }}
       >
         <nav>
@@ -53,33 +68,31 @@ const TemplateWrapper = ({ children }) => (
               fontFamily: "sans-serif",
               margin: 0,
               display: "flex",
+              flexWrap: "wrap",
               alignItems: "center",
               justifyContent: "center",
               listStyleType: "none"
             }}
           >
-            <NavLink to="/about">About Me</NavLink>
-
-            <NavLink to="/blog">Blog</NavLink>
-
-            <NavLink to="/therapy/couples-and-family">
-              Couples and Family Therapy
-            </NavLink>
-
-            <NavLink to="/therapy/individual">Individual Therapy</NavLink>
-
-            <NavLink to="/what-to-expect">What to Expect</NavLink>
-
-            <NavLink to="/contact">Contact</NavLink>
-
-            <NavLink to="/resources">Resources</NavLink>
+            {links}
           </ul>
         </nav>
       </div>
       <div
         css={{
-          paddingTop: 75,
-          width: "100%",
+          "@media(min-width: 44em)": {
+            display: "none"
+          }
+        }}
+      />
+      <div
+        css={{
+          "@media(min-width: 44em)": {
+            paddingTop: "150px"
+          },
+          padding: "2rem",
+          maxWidth: 980,
+          margin: "0 auto",
           minHeight: "100vh",
           top: "0",
           color: "darkslategray",
