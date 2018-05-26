@@ -1,19 +1,32 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Default Starter"
+    title: "Negar Morshedian - Therapist - NYC"
   },
   plugins: [
     "gatsby-plugin-glamor",
-    // "gatsby-plugin-netlify-cms",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    "gatsby-transformer-javascript-frontmatter",
+    `gatsby-transformer-remark`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "src",
         path: `${__dirname}/src/`
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "src",
+        path: `${__dirname}/_pages/`
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "src",
+        path: `${__dirname}/_posts/`
       }
     },
     {

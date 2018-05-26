@@ -14,7 +14,9 @@
     "gatsby-plugin-typography": "^1.7.14",
     "gatsby-source-filesystem": "^1.5.23",
     "gatsby-transformer-javascript-frontmatter": "^1.0.10",
+    "gatsby-transformer-remark": "^1.7.41",
     "gatsby-transformer-sharp": "^1.6.21",
+    "react-burger-menu": "^2.4.4",
     "react-helmet": "^5.2.0",
     "typography-theme-sutro": "^0.15.10"
   },

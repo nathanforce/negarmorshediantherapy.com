@@ -1,7 +1,10 @@
 import React from "react";
 
-export default () => <div>HMU</div>;
-
-// export const frontmatter = {
-//   title: "Contact"
-// };
+export default () => {
+  return (
+    <div>
+      <h1>Contact</h1>
+      <div>@ me</div>
+    </div>
+  );
+};
