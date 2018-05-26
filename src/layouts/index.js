@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { Fullscreen } from "../components/Fullscreen";
 import Link from "gatsby-link";
+import { colors } from "../utils/theme";
 
 const NavLink = props => (
   <li
@@ -58,13 +59,13 @@ const TemplateWrapper = ({ children }) => (
           width: "100%",
           zIndex: "100",
           padding: "1rem",
-          backgroundColor: "#f3f7f7"
+          backgroundColor: colors.secondary
         }}
       >
         <nav>
           <ul
             css={{
-              color: "darkslategrey",
+              color: colors.primary,
               fontFamily: "sans-serif",
               margin: 0,
               display: "flex",
@@ -95,7 +96,7 @@ const TemplateWrapper = ({ children }) => (
           margin: "0 auto",
           minHeight: "100vh",
           top: "0",
-          color: "darkslategray",
+          color: colors.secondary,
           backgroundColor: "white"
         }}
       >
