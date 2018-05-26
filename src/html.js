@@ -32,7 +32,7 @@ module.exports = class HTML extends React.Component {
           <link
             rel="stylesheet"
             type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css"
           />
           {this.props.headComponents}
           {css}

@@ -80,11 +80,11 @@ export default ({ data }) => (
           <p
             style={{
               color: colors.white,
-              // opacity: 0.8,
               mixBlendMode: "overlay",
-              background: colors.secondary,
+              background: "rgba(50, 87, 112, .25)",
               display: "inline",
-              padding: "0.45rem",
+              padding: "0.35rem 0.5rem",
+              lineHeight: 2,
               boxDecorationBreak: "clone",
               WebkitBoxDecorationBreak: "clone"
             }}

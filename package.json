@@ -12,12 +12,15 @@
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-plugin-sharp": "^1.6.34",
     "gatsby-plugin-typography": "^1.7.14",
+    "gatsby-remark-images": "^1.5.63",
+    "gatsby-remark-relative-images": "^0.1.1",
     "gatsby-source-filesystem": "^1.5.23",
     "gatsby-transformer-javascript-frontmatter": "^1.0.10",
     "gatsby-transformer-remark": "^1.7.41",
     "gatsby-transformer-sharp": "^1.6.21",
     "react-burger-menu": "^2.4.4",
     "react-helmet": "^5.2.0",
+    "sanitize.css": "^5.0.0",
     "typography-theme-sutro": "^0.15.10"
   },
   "keywords": [

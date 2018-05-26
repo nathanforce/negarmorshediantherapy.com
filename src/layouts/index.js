@@ -89,7 +89,7 @@ const TemplateWrapper = ({ children }) => (
       <div
         css={{
           "@media(min-width: 44em)": {
-            paddingTop: "150px"
+            paddingTop: "80px"
           },
           padding: "2rem",
           maxWidth: 980,
