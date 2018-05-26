@@ -5,4 +5,6 @@ permalink: posts/my-first-post
 brief: Brief summary of my first post ever!
 ---
 
-This is a post
+This is a post.  Here you can see a picture of my hot boyfriend before he shaved his head and grew a creeper mustache.
+
+![bio.jpg](/uploads/bio.jpg)
