@@ -8,7 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-    permalink: '_/uploads'
+    permalink: '_uploads/:title'
 defaults:
 - scope:
     path: ''
