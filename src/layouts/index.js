@@ -3,6 +3,8 @@ import Helmet from "react-helmet";
 import { Fullscreen } from "../components/Fullscreen";
 import Link from "gatsby-link";
 import { colors } from "../utils/theme";
+import { NavMobile } from "../components/MobileNav";
+import { css } from "glamor";
 
 const NavLink = props => (
   <li
@@ -11,16 +13,24 @@ const NavLink = props => (
       marginRight: "1.75rem",
       "& a:hover": {
         paddingBottom: ".4rem",
-        borderBottom: "3px dotted currentColor"
+        "@media(min-width: 44em)": {
+          borderBottom: "3px dotted currentColor"
+        }
       }
     }}
   >
     <Link
       {...props}
-      style={{ textDecoration: "none" }}
+      style={{
+        textDecoration: "none"
+      }}
+      activeClassName={css({
+        "@media(min-width: 44em)": {
+          borderBottom: "3px solid currentColor"
+        }
+      })}
       activeStyle={{
-        paddingBottom: ".4rem",
-        borderBottom: "3px solid currentColor"
+        paddingBottom: ".4rem"
       }}
     />
   </li>
@@ -81,11 +91,14 @@ const TemplateWrapper = ({ children }) => (
       </div>
       <div
         css={{
+          position: "relative",
           "@media(min-width: 44em)": {
             display: "none"
           }
         }}
-      />
+      >
+        <NavMobile items={links} />
+      </div>
       <div
         css={{
           "@media(min-width: 44em)": {

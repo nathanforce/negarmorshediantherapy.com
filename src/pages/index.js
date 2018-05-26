@@ -16,17 +16,20 @@ export default ({ data }) => (
         }}
       />
       <div
-        style={{
+        css={{
           position: "absolute",
           left: 0,
           top: 0,
           width: "100%",
           height: "100%",
           display: "flex",
-          padding: "5rem",
           alignItems: "start",
           justifyContent: "center",
-          flexDirection: "column"
+          padding: "1rem",
+          flexDirection: "column",
+          "@media(min-width: 44em)": {
+            padding: "5rem"
+          }
         }}
       >
         <div>
@@ -36,57 +39,68 @@ export default ({ data }) => (
               fontSize: 200,
               textTransform: "uppercase",
               letterSpacing: "initial",
-              mixBlendMode: "overlay",
               lineHeight: 1,
-              position: "absolute",
-              transform: "translate(0,-30%)",
-              opacity: 0.6
+              opacity: 0.6,
+              mixBlendMode: "overlay",
+              "@media(min-width: 44em)": {
+                position: "absolute",
+                transform: "translate(0,-30%)"
+              }
             }}
           >
             NM
           </h1>
           <h2
-            style={{
+            css={{
               color: colors.white,
               mixBlendMode: "overlay",
-              fontSize: 50,
               textTransform: "uppercase",
               fontWeight: 100,
-              marginTop: "2rem",
-              marginBottom: "1rem"
+              marginTop: "1rem",
+              marginBottom: ".5rem",
+              "@media(min-width: 44em)": {
+                marginTop: "2rem",
+                fontSize: 50
+              }
             }}
           >
             Negar Morshedian
           </h2>{" "}
-          <h2
-            style={{
+          <h3
+            css={{
               color: colors.white,
               mixBlendMode: "overlay",
-              fontSize: 50,
               textTransform: "uppercase",
               fontWeight: 300,
-              margin: 0
+              margin: 0,
+              "@media(min-width: 44em)": {
+                fontSize: 50
+              }
             }}
           >
             Psychotherapist, NYC
-          </h2>
+          </h3>
         </div>
         <div
-          style={{
-            maxWidth: "40%",
+          css={{
+            "@media(min-width: 44em)": {
+              maxWidth: "600px"
+            },
             marginTop: "1rem"
           }}
         >
           <p
-            style={{
+            css={{
               color: colors.white,
-              mixBlendMode: "overlay",
               background: "rgba(50, 87, 112, .25)",
               display: "inline",
               padding: "0.35rem 0.5rem",
               lineHeight: 2,
               boxDecorationBreak: "clone",
-              WebkitBoxDecorationBreak: "clone"
+              WebkitBoxDecorationBreak: "clone",
+              "@media(min-width: 44em)": {
+                mixBlendMode: "overlay"
+              }
             }}
           >
             Negar is a compassionate therapist who aims to create an accepting

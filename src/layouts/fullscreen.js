@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { Fullscreen } from "../components/Fullscreen";
 import Link from "gatsby-link";
 import { colors } from "../utils/theme";
+import { NavMobile } from "../components/MobileNav";
 
 const NavLink = props => (
   <li
@@ -81,7 +82,16 @@ const TemplateWrapper = ({ children }) => (
           </ul>
         </nav>
       </div>
-
+      <div
+        css={{
+          position: "relative",
+          "@media(min-width: 44em)": {
+            display: "none"
+          }
+        }}
+      >
+        <NavMobile items={links} />
+      </div>
       <div>{children()}</div>
     </Fullscreen>
   </div>
