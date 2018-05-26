@@ -2,6 +2,7 @@
 title: Post!
 date: 2018-05-24 16:17:00 -04:00
 permalink: posts/my-first-post
+brief: Brief summary of my first post ever!
 ---
 
 This is a post
