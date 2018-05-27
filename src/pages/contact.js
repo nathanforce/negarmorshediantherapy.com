@@ -22,6 +22,8 @@ export default () => {
                 Don’t fill this out if you're human: <input name="bot-field" />
               </label>
             </p>
+            {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+            <input type="hidden" name="form-name" value="contact" />
             <label htmlFor="name" className="label">
               Name
             </label>
