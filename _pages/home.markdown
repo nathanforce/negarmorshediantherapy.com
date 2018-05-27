@@ -8,5 +8,6 @@ fields:
     and growth and her approach to therapy is strength-based, emotion-focused, and
     relational. Negar works collaboratively with her clients to set goals, identify
     barriers to growth, and increase coping skills.
+isHomePage: true
 ---
 
