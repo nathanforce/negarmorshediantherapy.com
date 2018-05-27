@@ -15,7 +15,7 @@ export default () => {
             netlify-honeypot="bot-field"
             method="POST"
             action="thank-you"
-            netlify
+            data-netlify={true}
           >
             <p css={{ display: "none" }}>
               <label>
