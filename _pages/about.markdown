@@ -8,6 +8,7 @@ I am a New York State Licensed Mental health Counselor. I earned an advanced Mas
 
 As an Iranian-Canadian who identifies as a woman of color, I have learned to pay special attention to cultural context and intersections of identity. I am passionate about working with individuals from marginalized populations. I am experienced in working with LGBTQ adults and adolescents. 
 
+I am a professional member of the American Counseling Association. I am also a Level 1 Trained Therapist in Accelerated Experiential Dynamic Psychotherapy (AEDP) and Trained Functional Family Therapist (FFT). 
 
 
 
